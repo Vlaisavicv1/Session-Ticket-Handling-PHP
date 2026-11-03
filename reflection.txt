@@ -1,0 +1,15 @@
+Question 1: What information connects a browser request to a PHP session?
+The answer would be the session ID, php generates a random session ID and creates a server side file for it. 
+
+Question 2: Why does PHP use password_verify() instead of decrypting stored passwords?
+The password isn't encrypted, it's hashed and it cannot be reversed. 
+
+Question 3: Why is hiding the status-update button insufficient authorization?
+Hiding the button only changes what the browser shows, it won't change what is done server side. 
+
+Question 4: Why should the authenticated user's identity come from the session rather than a form field?
+The session is controlled by the server, a form is simply is simply controlled by the individual submitting the form. 
+
+Question 5: What did the session counter or flash-message exercise reveal about requests that was not obvious before?
+HTTP requests are independent anything that seems to persist is the state the server stored and reconnected to the browser. 
+This is evident from the session counter and the flash messaging. 
